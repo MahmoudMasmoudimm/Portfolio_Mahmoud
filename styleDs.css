@@ -90,6 +90,8 @@ a {
 .home-info .btn-sci {
     display: flex;
     align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -995,6 +997,10 @@ embed {
         /* Adjust size for smaller screens */
         transform: translateY(0);
         /* Adjust positioning */
+    }
+
+    .home-info .btn-sci {
+        gap: 270px;
     }
 
     /*home*/
