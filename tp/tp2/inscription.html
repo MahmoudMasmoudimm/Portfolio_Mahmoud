@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tp2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="div-content">
+                <img src="image\logo IIT.png" class="logo-IIT">
+                <h1 class="title">University Nord Americain Privee : Intitut International de <br>Technologie</h1>
+                <img src="image\campus.png" class="compus"> <br><br>
+            </div>
+            <nav>
+                <div class="btn">
+                    <a type="button" class="button" href="index.html">Actualité</a>
+                    <a type="button" class="button" href="inscription.html">Inscription</a>
+                    <a type="button" class="button" href="galerie.html">Galerie</a>
+                </div>
+            </nav>
+            <br>
+        </header>
+        <main>
+            <form action="POST">
+                <fieldset>
+                    <legend>Inscription etudiant</legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="Nom">Nom:</label>
+                                <input type="text" name="Nom" class="zone">
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Prenom">Prenom:</label>
+                                <input type="text" name="Prenom" class="zone">
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Naissance">Naissance:</label>
+                                <input type="date" name="Naissance" class="zone">
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Sexe" id="sexe">Sexe:</label>
+                                <label for="Masculin" >Masculin</label>
+                                <input type="radio" name="Masculin" checked />
+                                <label for="Féminin" >Féminin</label>
+                                <input type="radio" name="Féminin" />
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Pays">Pays:</label>
+                                <select name="Pays">
+                                    <option value="Tunisie" class="zone">Tunisie</option>
+                                </select>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Langues">Langues:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Arabe">Arabe</label>
+                                <input type="checkbox" name="Arabe"><br>
+
+                                <label for="Francais">Francais</label>
+                                <input type="checkbox" name="Francais"><br>
+
+                                <label for="Anglais">Anglais</label>
+                                <input type="checkbox" name="Anglais">
+                            </td>  
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="Image">Image:</label>
+                                <input type="file" name="Image">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit">Valider</button>
+                            </td>
+                        </tr>                  
+                    </table>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p>
+                Route M'harza Km 1.5, Sfax <br>
+                Tel: +216 74 465 020 <br>
+                MAIL : contact.iit@iit.tn <br>
+            </p>
+        </footer>
+    </body>
+</html>

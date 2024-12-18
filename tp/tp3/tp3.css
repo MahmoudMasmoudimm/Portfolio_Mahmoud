@@ -1,0 +1,70 @@
+body{
+    background-color: silver;
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+    margin: 80pt;
+    color: black;
+}
+header{
+    background-color: #e8eff7;
+    padding: 20pt;
+    text-align: center;
+}
+h1{
+    padding: 0;
+    font-size: 14pt;
+    margin: 0;
+    margin-bottom: 15pt;
+}
+.age{
+    margin-bottom: 15pt;
+    font-weight: bold;
+}
+.specialite{
+    margin-bottom: 15pt;
+    font-weight: bold;
+}
+.adresse{
+    text-align: right;
+    font-size: 10pt;
+}
+h2{
+    text-transform: uppercase;
+    color: navy;
+    background-color: #e8eff7;
+    padding: 2pt;
+    margin-top: 10px;
+    font-size: 12pt;
+}
+.annee{
+    color: red;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+ul{
+    margin: 5pt;
+}
+li{
+    margin: 5pt;
+}
+h3{
+    font-size: 12pt;
+    display: inline;
+}
+a:link{
+    color: red;
+    cursor: pointer;
+}
+a:visited{
+    color: red;
+}
+a:active{
+    color: red;
+}
+a:hover{
+    color: blueviolet;
+    text-decoration: none;
+}
+

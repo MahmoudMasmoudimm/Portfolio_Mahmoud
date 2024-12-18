@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styleDs.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">M & M</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="ethics.html">Ethics</a></li>
+            <li><a href="diplomes.html">Diplomes</a></li>
+            <li><a href="TP.html">TP</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="IIT.html">IIT</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <div class="quiz-container">
+            <h1 class="quiz-title">Quiz</h1>
+            <div class="quiz-img">
+                <div class="img-box">
+                    <img src="images/quiz.jpg" alt="">
+                </div>
+            </div>
+            <div id="quiz">
+                <div class="question" id="question">Loading...</div>
+                <div class="answers" id="answers"></div>
+            </div>
+            <div class="result" id="result" style="display: none;"></div>
+        </div>
+        
+        <div class="submit-container">
+            <button id="submit">Send</button>
+            <button class="restart-quiz" onclick="quiz.html">Restart Quiz</button>
+        </div>
+
+        <script src="script.js"></script>
+        
+    </body>
+
+</html>

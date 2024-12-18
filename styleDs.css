@@ -1,0 +1,1291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #1f242d;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(31, 36, 45, 0.9);
+    z-index: 100;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.5s ease;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: #3df06a
+}
+
+/*Home*/
+
+.home {
+    margin-top: 80px;
+    /* Adjusted to account for the fixed navbar */
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 70px);
+    /* Adjusted height to fit viewport */
+    padding: 60px 10%;
+    color: #fff;
+}
+
+.home-info h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-info h2 {
+    font-size: 28px;
+}
+
+.home-info h2 span {
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px #3df06a;
+    /*text-shadow: 0 0 2px #3df06a;*/
+}
+
+.home-info p {
+    font-size: 16px;
+    margin: 10px 0 25px;
+}
+
+.home-info .btn-sci {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #3df06a;
+    border: 2px solid #3df06a;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #3df06a;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #3df06a;
+    box-shadow: none;
+}
+
+.home-img {
+    margin-bottom: 50px;
+}
+
+.home-img .img-box {
+    position: relative;
+    width: 28vw;
+    height: 28vw;
+    background-color: #1f242d;
+    transform: translateY (5%);
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::before,
+.home-img .img-box::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: conic-gradient(transparent, transparent, #3df06a, transparent);
+}
+
+.home-img .img-box .img-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #1f242d;
+    border-radius: 50%;
+    border: 0.1px solid #1f242d;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+
+.home-img .img-box .img-item img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+
+/*Home*/
+
+/*ethics*/
+
+.ethics {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.ethics .ethics-info h2 {
+    color: #fff;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.ethics .ethics-info h3.ethic2 {
+    color: #fff;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    letter-spacing: 10px;
+}
+
+.ethics .ethics-info h3 {
+    color: #fff;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+    letter-spacing: 10px;
+}
+
+ul {
+    margin: 5pt;
+}
+
+.Gultrah {
+    color: rgb(255, 217, 0);
+    font-size: x-large;
+    margin: 5pt;
+}
+
+.ethics .ethics-info a.gulyout {
+    color: rgb(255, 217, 0);
+    text-decoration: underline;
+}
+
+.ethics .ethics-info a.crisinsta {
+    color: rgb(0, 174, 255);
+    text-decoration: underline;
+}
+
+.ethics .ethics-info a.realinsta {
+    color: white;
+    text-decoration: underline;
+}
+
+.ethics .ethics-info a.cssinsta {
+    color: white;
+    text-decoration: underline;
+}
+
+.ethics .ethics-info span {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.ethics .ethics-info span p {
+    color: #fff;
+    justify-content: center;
+    width: 60%;
+    padding-top: 30px;
+    padding-left: 0px;
+    word-spacing: 5px;
+    line-height: 1.7;
+}
+
+.ethics .ethics-info span img.gultrah {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(255, 217, 0);
+}
+
+.Mickael {
+    color: rgb(11, 0, 163);
+    font-size: x-large;
+    padding-top: 30px;
+    margin: 5pt;
+}
+
+.ethics .ethics-info span img.mickael {
+    width: 230px;
+    height: 400px;
+    margin-left: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(11, 0, 163);
+}
+
+
+.Cristiano {
+    color: rgb(0, 174, 255);
+    font-size: x-large;
+    padding-top: 30px;
+    margin: 5pt;
+}
+
+.ethics .ethics-info span img.cristiano {
+    width: 340px;
+    height: 400px;
+    margin-left: 100px;
+    border-radius: 20px;
+}
+
+.Real {
+    color: white;
+    font-size: x-large;
+    padding-top: 30px;
+    margin: 5pt;
+}
+
+.ethics .ethics-info span img.real {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px white;
+}
+
+.Pes {
+    color: rgb(255, 223, 42);
+    font-size: x-large;
+    padding-top: 30px;
+    margin: 5pt;
+}
+
+.ethics .ethics-info span img.pes {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(255, 223, 42);
+}
+
+.Css {
+    color: white;
+    font-size: x-large;
+    padding-top: 30px;
+    margin: 5pt;
+}
+
+.ethics .ethics-info span img.cssf {
+    width: 200px;
+    height: 250px;
+    margin-top: 40px;
+    margin-left: 130px;
+}
+
+.gta {
+    color: rgb(201, 97, 0);
+    font-size: x-large;
+    padding-top: 30px;
+    margin: 5pt;
+}
+
+.ethics .ethics-info span img.gta {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(201, 97, 0);
+}
+
+
+
+/*ethics*/
+
+/*contact*/
+
+.contact {
+    display: flex;
+    margin-top: 110px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    /* Centre les éléments du formulaire verticalement */
+    justify-content: center;
+    /* Centre les éléments horizontalement à l'intérieur du formulaire */
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    max-width: 600px;
+    /* Largeur maximale */
+    width: 50%;
+    /* Largeur spécifique */
+    margin: 0;
+    /* Supprime le centrage horizontal */
+    margin-left: 150px;
+    /* Positionne le formulaire à gauche */
+}
+
+label {
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-align: center;
+    /* Facultatif : centre le texte du label */
+}
+
+input,
+textarea {
+    width: 80%;
+    /* Garde une largeur fixe pour les champs */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    text-align: left;
+    /* Champ de saisie aligné à gauche */
+}
+
+input:focus,
+textarea:focus {
+    border-color: #3df06a;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3df06a;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #32c957;
+}
+
+.contact-info {
+    margin-top: 140px;
+    margin-left: 100px;
+    color: white;
+}
+
+.contact-info ul {
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.contact-liste {
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    padding: 20px 0;
+    border-bottom: 1px solid #444;
+    /* Add a border between items */
+}
+
+.contact-img {
+    height: 24px;
+    /* Adjust the image size */
+    width: 24px;
+    margin-right: 10px;
+    /* Space between image and text */
+}
+
+h6 {
+    font-size: 1.5rem;
+    /* Adjust the font size */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /* Ensure image and text are aligned */
+}
+
+p {
+    margin: 0;
+    padding-left: 34px;
+    /* Indent to align with the start of the text in h3 */
+    font-size: 1rem;
+    color: white;
+    /* Light gray color for the text */
+}
+
+
+/*contact*/
+
+/*skills*/
+
+/* Skills Section */
+.skills {
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    /* Légèrement augmenté */
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+    /* Animation d'entrée */
+}
+
+/* Card Content Section */
+.card-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colonnes fixes */
+    gap: 20px;
+    /* Espacement entre les cartes */
+    padding: 20px;
+    /* Espacement autour de la grille */
+    justify-items: center;
+    /* Centrer les cartes horizontalement */
+}
+
+
+/* Card Styling */
+.card {
+    width: 100%;
+    max-width: 20rem;
+    /* Légèrement agrandi */
+    height: auto;
+    border-radius: 12px;
+    /* Coins arrondis plus modernes */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    /* Ombre améliorée */
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    /* Dégradé subtil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px) rotate(1deg);
+    /* Légère rotation */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    /* Ombre plus marquée */
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
+    /* Inversion du dégradé */
+}
+
+/* Image Styling */
+.card-img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+    /* Séparation visuelle */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensures title and text are spaced out */
+    height: 100%;
+    /* Ensures card body fills up available space */
+}
+
+/* Card Title Styling */
+.card-title {
+    margin-left: 15px;
+    text-align: left;
+    font-size: 1.4rem;
+    /* Augmentation de la taille */
+    padding: 10px 0;
+    /* Espacement supérieur et inférieur */
+    border-bottom: 2px solid #f0f0f0;
+    /* Soulignement visuel avec une bordure */
+}
+
+/* Card Text Styling */
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    /* Couleur légèrement plus foncée */
+    text-align: justify;
+    /* Texte justifié */
+    line-height: 1.8;
+    /* Ligne plus espacée */
+    padding: 10px 15px;
+    /* Espacement intérieur uniforme */
+}
+
+
+/*skills*/
+
+/*Diplomes*/
+
+.diplomes {
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+    text-decoration: underline;
+}
+
+.card-dip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+/* Card Styling */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* Smooth edges for the card */
+    margin-top: 80px;
+    margin-bottom: 20px;
+    /* Space between cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a light shadow */
+}
+
+/* PDF Embed Styling */
+embed {
+    width: 100%;
+    height: 330px;
+    /* Fixed height for the PDF viewer */
+    border: none;
+    /* Remove border around the PDF */
+    margin-bottom: 15px;
+    /* Add space below the PDF viewer */
+}
+
+/* Title Styling */
+.card-title {
+    font-size: 1.25rem;
+    /* Slightly larger font for the title */
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Space below the title */
+    color: #333;
+    /* Darker text for better contrast */
+}
+
+/* Text Styling */
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    /* Slightly lighter color for the text */
+    line-height: 1.6;
+    /* Add line height for readability */
+}
+
+/* Secondary Text Styling */
+.text-body-secondary {
+    color: #777;
+    /* Lighter color for the "Last updated" text */
+}
+
+.description {
+    color: #1f242d;
+}
+
+
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+    embed {
+        height: 300px;
+        /* Reduce height of PDF for smaller screens */
+    }
+}
+
+
+
+/*Diplomes*/
+
+/*TP*/
+
+.tp-text {
+    margin-top: 150px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.TP {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+    /* Gradient background for a modern look */
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow for depth */
+    max-width: 800px;
+    margin: 80px auto;
+    text-align: center;
+    color: #fff;
+}
+
+.TP h2 {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    /* Uppercase for a bolder look */
+    letter-spacing: 2px;
+}
+
+.tps {
+    display: inline-block;
+    /* Inline-block for better control */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Bright background color for links */
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Smooth transitions */
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Shadow for a button effect */
+}
+
+.tps:hover {
+    background-color: #32c957;
+    /* Darker shade on hover */
+    transform: translateY(-3px);
+    /* Move the button up slightly on hover */
+}
+
+@media (max-width: 768px) {
+    .TP h2 {
+        font-size: 2rem;
+        /* Adjust the font size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .tps {
+        display: block;
+        /* Make links block elements on smaller screens */
+        margin: 10px auto;
+        /* Center them with auto margin */
+        padding: 10px 20px;
+        font-size: 1rem;
+        /* Adjust the font size */
+    }
+}
+
+/*quiz*/
+
+.quiz-container {
+    max-width: 600px;
+    margin: 100px auto;
+    background: #2a2e35;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 120px;
+}
+
+.quiz-title {
+    text-align: center;
+    color: white;
+}
+
+.question {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.answers button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #2a2e35;
+    border: 2px solid;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.answers button:hover {
+    background-color: transparent;
+    color: #3df06a;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.result button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3df06a;
+    border: 2px solid #3df06a;
+    border-radius: 40px;
+    color: #1f242d;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 10px #3df06a;
+    transition: all 0.4s ease;
+}
+
+.result button:hover {
+    background-color: transparent;
+    color: #3df06a;
+    box-shadow: none;
+}
+
+.quiz-img .img-box {
+    margin: 20px auto;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #1f242d;
+    border-radius: 50%;
+    border: 2px solid #1f242d;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-img .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.submit-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    display: none;
+    background-color: #3df06a;
+    border: 2px solid #3df06a;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #3df06a;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+#submit:hover {
+    background: transparent;
+    color: #3df06a;
+    box-shadow: none;
+}
+
+.restart-quiz {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3df06a;
+    border: 2px solid #3df06a;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #3df06a;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.restart-quiz:hover {
+    background: transparent;
+    color: #3df06a;
+    box-shadow: none;
+}
+
+/*quiz*/
+
+/*IIT*/
+
+.tem-title {
+    color: #fff;
+    text-align: center;
+    margin-top: 120px;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+.tem-container {
+    display: flex;
+    align-items: center;
+    /* Aligner verticalement au centre */
+    justify-content: space-between;
+    /* Écart entre le texte et la vidéo */
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 20px;
+    /* Espacement entre les deux éléments */
+}
+
+/* Texte à gauche */
+.tem-text {
+    flex: 1;
+    /* Prend tout l'espace disponible à gauche */
+    max-width: 60%;
+    /* Limiter la largeur du texte */
+    text-align: justify;
+    /* Justification du texte */
+    margin-top: 60px;
+}
+
+/* Vidéo à droite */
+.tem-video {
+    flex: 1;
+    /* Prend l'espace restant à droite */
+    max-width: 40%;
+    /* Limiter la taille de la vidéo */
+    margin-top: 50px;
+}
+
+.tem-video video {
+    width: 100%;
+    /* Vidéo responsive */
+    height: auto;
+    /* Maintenir le ratio d'aspect */
+    border-radius: 8px;
+    /* Coins arrondis pour le style */
+}
+
+.tem-IIT2 {
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 20px;
+    /* Espacement entre les deux éléments */
+    color: white;
+}
+
+.tem-author {
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+
+
+/*IIT*/
+
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+
+    /*navbar*/
+
+    .navbar .logo {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .navbar ul li a {
+        font-size: 15px;
+    }
+
+    /*navbar*/
+
+    /*home*/
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 5%;
+        margin-top: 80px;
+    }
+
+    .home-info {
+        margin-bottom: 20px;
+    }
+
+    .home-info h1 {
+        font-size: 36px;
+    }
+
+    .home-info h2 {
+        font-size: 24px;
+    }
+
+    .home-info p {
+        font-size: 14px;
+    }
+
+    .home-img .img-box {
+        width: 50vw;
+        /* Adjust size for smaller screens */
+        height: 50vw;
+        /* Adjust size for smaller screens */
+        transform: translateY(0);
+        /* Adjust positioning */
+    }
+
+    /*home*/
+
+    /*ethics*/
+
+    .ethics {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .ethics {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .ethics .ethics-info h2 {
+        padding-top: 80px;
+    }
+
+    .ethics .ethics-info span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ethics .ethics-info span p {
+        width: 80%;
+        padding: 10px 0;
+    }
+
+    .ethics .ethics-info span img.cssf {
+        margin: 20px 0;
+    }
+
+
+    /*ethics*/
+
+    /*contact*/
+    .contact {
+        margin-top: 140px;
+    }
+
+    form {
+        max-width: 90%;
+        /* Augmente la largeur maximale pour les petits écrans */
+        width: 100%;
+        /* Prend toute la largeur disponible */
+        margin-left: 20px;
+        /* Supprime la marge gauche */
+        padding: 15px;
+        /* Ajuste le padding pour les petits écrans */
+    }
+
+    label {
+        font-size: 1rem;
+        /* Diminue légèrement la taille de la police */
+        margin: 8px 0;
+        /* Ajuste la marge pour les petits écrans */
+    }
+
+    input,
+    textarea {
+        width: 80%;
+        /* Utilise toute la largeur disponible */
+        margin: 8px 0;
+        /* Ajuste la marge pour les petits écrans */
+        padding: 8px;
+        /* Ajuste le padding */
+        font-size: 0.9rem;
+        /* Diminue légèrement la taille de la police */
+    }
+
+    textarea {
+        height: 80px;
+        /* Diminue la hauteur pour les petits écrans */
+    }
+
+    button {
+        width: 100%;
+        /* Utilise toute la largeur disponible */
+        padding: 10px;
+        /* Ajuste le padding */
+    }
+
+    .contact-info {
+        margin-top: 60px;
+        /* Réduit la marge supérieure pour les petits écrans */
+        margin-left: 0;
+        /* Supprime la marge gauche */
+        padding: 15px;
+        /* Ajoute un padding pour de l'espace autour du contenu */
+    }
+
+    .contact-liste {
+        padding: 15px 0;
+        /* Réduit le padding pour les petits écrans */
+        flex-direction: column;
+        /* Aligne les éléments verticalement */
+        text-align: center;
+        /* Centre le texte */
+    }
+
+    .contact-img {
+        margin-right: 0;
+        /* Supprime l'espace entre l'image et le texte */
+        margin-bottom: 10px;
+        /* Ajoute une marge en bas de l'image */
+    }
+
+    h6 {
+        font-size: 1.2rem;
+        /* Ajuste la taille de la police pour les petits écrans */
+
+        justify-content: center;
+        /* Centre les éléments horizontalement */
+    }
+
+    p {
+        padding-left: 0;
+        /* Supprime l'indentation */
+        font-size: 0.9rem;
+        /* Diminue légèrement la taille de la police */
+    }
+
+    /*contact*/
+
+    /*skills*/
+
+    .skills {
+        font-size: 1.2rem;
+        margin-top: 120px;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    .card-content {
+        grid-template-columns: 1fr;
+        /* Une seule colonne */
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .card {
+        max-width: 50%;
+        /* Prend tout l'espace disponible */
+        margin-bottom: 20px;
+        /* Ajoute un espace entre les cartes */
+    }
+
+    .card-title {
+        margin-left: 10px;
+        font-size: 1.2rem;
+        padding: 10px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 10px 15px;
+    }
+
+
+
+
+    /*skills*/
+
+    /*diplomes*/
+
+    .card-dip {
+        gap: 30px;
+    }
+
+    button {
+        width: 30px;
+        /* Slightly smaller width for better fit */
+        height: 30px;
+        /* Slightly smaller height */
+        margin: 20px 0 5px;
+        /* Adjusted margins for better spacing */
+        border-width: 1.5px;
+        /* Slightly thinner border */
+    }
+
+    button:hover {
+        color: #fff;
+        background-color: #3df06a;
+    }
+
+    /*diplomes*/
+
+    /*TP*/
+    .TP {
+        margin: 60px 100px;
+    }
+
+    /*TP*/
+
+    /*quiz*/
+
+    .quiz-container {
+        max-width: 500px;
+    }
+
+    .answers button {
+        height: 45px;
+    }
+
+    .result button {
+        width: 220px;
+        height: 50px;
+        border: 2px solid #3df06a;
+        border-radius: 40px;
+        box-shadow: 0 0 10px #3df06a;
+        font-size: 16px;
+        color: #1f242d;
+        font-weight: 600;
+        transition: all 0.4s ease;
+    }
+
+    #submit {
+        width: 80px;
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
+        display: none;
+        background-color: #3df06a;
+        border: 2px solid #3df06a;
+        border-radius: 40px;
+        box-shadow: 0 0 10px #3df06a;
+        font-size: 16px;
+        color: #1f242d;
+        font-weight: 600;
+        transition: all 0.4s ease;
+    }
+
+    .restart-quiz {
+        width: 150px;
+        height: 50px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #3df06a;
+        border: 2px solid #3df06a;
+        border-radius: 40px;
+        box-shadow: 0 0 10px #3df06a;
+        font-size: 16px;
+        color: #1f242d;
+        font-weight: 600;
+        transition: all 0.4s ease;
+    }
+
+    /*quiz*/
+
+    /*IIT*/
+
+    .tem-container {
+        display: block;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tem-text {
+        max-width: 100%;
+        margin: 20px 0;
+        text-align: justify;
+    }
+
+    .tem-video {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .tem-video video {
+        width: 100%;
+        height: auto;
+    }
+
+    .tem-IIT2 {
+        font-size: 15px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tem-author {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    /*IIT*/
+}

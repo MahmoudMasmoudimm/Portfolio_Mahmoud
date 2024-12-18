@@ -1,0 +1,31 @@
+body{
+    background-image: url();
+    font-family: sans-serif;
+    text-align: justify;
+    background-image: linear-gradient(to left,white,silver);
+}
+h1{
+    color: red;
+    text-align: center;
+    box-shadow: 4px 4px 2px white;
+}
+p{
+    color: blue;
+    width: 50%;
+    box-shadow: 4px 4px 1px white;
+    border: 3px solid white;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+h1, p{
+    font-weight: bold;
+}
+img{
+    width: 400px;
+    height: 300px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    
+}
