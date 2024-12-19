@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +23,6 @@ a {
     justify-content: space-between;
     align-items: center;
     background: rgba(31, 36, 45, 0.9);
-    z-index: 100;
 }
 
 .navbar .logo {
@@ -45,7 +42,6 @@ a {
 .navbar ul li a {
     font-size: 18px;
     font-weight: 500;
-    transition: color 0.5s ease;
 }
 
 .navbar ul li a:hover,
@@ -57,11 +53,9 @@ a {
 
 .home {
     margin-top: 80px;
-    /* Adjusted to account for the fixed navbar */
     display: flex;
     align-items: center;
     height: calc(100vh - 70px);
-    /* Adjusted height to fit viewport */
     padding: 60px 10%;
     color: #fff;
 }
@@ -75,13 +69,12 @@ a {
     font-size: 28px;
 }
 
-.home-info h2 span {
+/*.home-info h2 span {
     display: inline-block;
     color: transparent;
     -webkit-text-stroke: .7px #3df06a;
-    /*text-shadow: 0 0 2px #3df06a;*/
 }
-
+*/
 .home-info p {
     font-size: 16px;
     margin: 10px 0 25px;
@@ -95,7 +88,6 @@ a {
 }
 
 .btn {
-    display: inline-block;
     padding: 10px 30px;
     background-color: #3df06a;
     border: 2px solid #3df06a;
@@ -122,7 +114,6 @@ a {
     width: 28vw;
     height: 28vw;
     background-color: #1f242d;
-    transform: translateY (5%);
     border-radius: 50%;
     padding: 5px;
     display: flex;
@@ -133,11 +124,11 @@ a {
 
 .home-img .img-box::before,
 .home-img .img-box::after {
-    content: '';
-    position: absolute;
+    /*content: '';
+    position: absolute;*/
     width: 500px;
     height: 500px;
-    background: conic-gradient(transparent, transparent, #3df06a, transparent);
+    /*background: conic-gradient(transparent, transparent, #3df06a, transparent);*/
 }
 
 .home-img .img-box .img-item {
@@ -162,7 +153,6 @@ a {
     display: block;
     width: 100%;
     object-fit: cover;
-    mix-blend-mode: lighten;
 }
 
 /*Home*/
@@ -358,22 +348,16 @@ ul {
 form {
     display: flex;
     align-items: center;
-    /* Centre les éléments du formulaire verticalement */
     justify-content: center;
-    /* Centre les éléments horizontalement à l'intérieur du formulaire */
     flex-direction: column;
     border: 1px solid white;
     padding: 20px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     max-width: 600px;
-    /* Largeur maximale */
     width: 50%;
-    /* Largeur spécifique */
     margin: 0;
-    /* Supprime le centrage horizontal */
     margin-left: 150px;
-    /* Positionne le formulaire à gauche */
 }
 
 label {
@@ -381,13 +365,11 @@ label {
     font-size: 1.2rem;
     margin: 10px 0;
     text-align: center;
-    /* Facultatif : centre le texte du label */
 }
 
 input,
 textarea {
     width: 80%;
-    /* Garde une largeur fixe pour les champs */
     margin: 10px 0;
     padding: 10px;
     border-radius: 10px;
@@ -397,7 +379,6 @@ textarea {
     font-size: 1rem;
     outline: none;
     text-align: left;
-    /* Champ de saisie aligné à gauche */
 }
 
 input:focus,
@@ -408,7 +389,6 @@ textarea:focus {
 
 textarea {
     height: 100px;
-    resize: vertical;
 }
 
 button {
@@ -435,7 +415,6 @@ button:hover {
 
 .contact-info ul {
     list-style: none;
-    /* Remove default list styling */
     padding: 0;
     margin: 0;
 }
@@ -443,36 +422,28 @@ button:hover {
 .contact-liste {
     display: flex;
     align-items: center;
-    /* Center items vertically */
     padding: 20px 0;
     border-bottom: 1px solid #444;
-    /* Add a border between items */
 }
 
 .contact-img {
     height: 24px;
-    /* Adjust the image size */
     width: 24px;
     margin-right: 10px;
-    /* Space between image and text */
 }
 
 h6 {
     font-size: 1.5rem;
-    /* Adjust the font size */
     margin: 0;
     display: flex;
     align-items: center;
-    /* Ensure image and text are aligned */
 }
 
 p {
     margin: 0;
     padding-left: 34px;
-    /* Indent to align with the start of the text in h3 */
     font-size: 1rem;
     color: white;
-    /* Light gray color for the text */
 }
 
 
@@ -480,103 +451,72 @@ p {
 
 /*skills*/
 
-/* Skills Section */
 .skills {
     color: #fff;
     text-align: center;
     margin-top: 120px;
     text-decoration: underline;
     font-size: 1.5rem;
-    /* Légèrement augmenté */
     font-weight: bold;
     animation: fadeIn 1s ease-in-out;
-    /* Animation d'entrée */
 }
 
 /* Card Content Section */
 .card-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* 3 colonnes fixes */
     gap: 20px;
-    /* Espacement entre les cartes */
     padding: 20px;
-    /* Espacement autour de la grille */
     justify-items: center;
-    /* Centrer les cartes horizontalement */
 }
 
-
-/* Card Styling */
 .card {
     width: 100%;
     max-width: 20rem;
-    /* Légèrement agrandi */
     height: auto;
     border-radius: 12px;
-    /* Coins arrondis plus modernes */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    /* Ombre améliorée */
     overflow: hidden;
     background: linear-gradient(to bottom, #ffffff, #f9f9f9);
-    /* Dégradé subtil */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Card Hover Effect */
 .card:hover {
     transform: translateY(-10px) rotate(1deg);
-    /* Légère rotation */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-    /* Ombre plus marquée */
     background: linear-gradient(to bottom, #f9f9f9, #ffffff);
-    /* Inversion du dégradé */
 }
 
-/* Image Styling */
 .card-img {
     height: 50%;
     width: 100%;
     object-fit: cover;
     border-bottom: 2px solid #ddd;
-    /* Séparation visuelle */
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Card Body Styling */
 .card-body {
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Ensures title and text are spaced out */
     height: 100%;
-    /* Ensures card body fills up available space */
 }
 
-/* Card Title Styling */
 .card-title {
     margin-left: 15px;
     text-align: left;
     font-size: 1.4rem;
-    /* Augmentation de la taille */
     padding: 10px 0;
-    /* Espacement supérieur et inférieur */
     border-bottom: 2px solid #f0f0f0;
-    /* Soulignement visuel avec une bordure */
 }
 
-/* Card Text Styling */
 .card-text {
     font-size: 1rem;
     color: #555;
-    /* Couleur légèrement plus foncée */
     text-align: justify;
-    /* Texte justifié */
     line-height: 1.8;
-    /* Ligne plus espacée */
     padding: 10px 15px;
-    /* Espacement intérieur uniforme */
 }
 
 
@@ -598,70 +538,41 @@ p {
     gap: 100px;
 }
 
-/* Card Styling */
 .card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    /* Smooth edges for the card */
     margin-top: 80px;
     margin-bottom: 20px;
-    /* Space between cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add a light shadow */
 }
 
-/* PDF Embed Styling */
 embed {
     width: 100%;
     height: 330px;
-    /* Fixed height for the PDF viewer */
     border: none;
-    /* Remove border around the PDF */
     margin-bottom: 15px;
-    /* Add space below the PDF viewer */
 }
 
-/* Title Styling */
 .card-title {
     font-size: 1.25rem;
-    /* Slightly larger font for the title */
     font-weight: bold;
     margin-bottom: 10px;
-    /* Space below the title */
     color: #333;
-    /* Darker text for better contrast */
 }
 
-/* Text Styling */
 .card-text {
     font-size: 1rem;
     color: #555;
-    /* Slightly lighter color for the text */
     line-height: 1.6;
-    /* Add line height for readability */
 }
 
-/* Secondary Text Styling */
 .text-body-secondary {
     color: #777;
-    /* Lighter color for the "Last updated" text */
 }
 
 .description {
     color: #1f242d;
 }
-
-
-
-/* Responsive Design: Adjust for smaller screens */
-@media (max-width: 768px) {
-    embed {
-        height: 300px;
-        /* Reduce height of PDF for smaller screens */
-    }
-}
-
-
 
 /*Diplomes*/
 
@@ -677,11 +588,9 @@ embed {
 
 .TP {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
-    /* Gradient background for a modern look */
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    /* Enhanced shadow for depth */
     max-width: 800px;
     margin: 80px auto;
     text-align: center;
@@ -691,51 +600,25 @@ embed {
 .TP h2 {
     margin-bottom: 30px;
     text-transform: uppercase;
-    /* Uppercase for a bolder look */
     letter-spacing: 2px;
 }
 
 .tps {
     display: inline-block;
-    /* Inline-block for better control */
     background-color: rgba(255, 255, 255, 0.2);
-    /* Bright background color for links */
     color: #fff;
     text-decoration: none;
     padding: 12px 24px;
     margin: 10px;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    /* Smooth transitions */
     font-size: 1.1rem;
-    /* Slightly larger font size */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* Shadow for a button effect */
 }
 
 .tps:hover {
     background-color: #32c957;
-    /* Darker shade on hover */
     transform: translateY(-3px);
-    /* Move the button up slightly on hover */
-}
-
-@media (max-width: 768px) {
-    .TP h2 {
-        font-size: 2rem;
-        /* Adjust the font size for smaller screens */
-        margin-bottom: 20px;
-    }
-
-    .tps {
-        display: block;
-        /* Make links block elements on smaller screens */
-        margin: 10px auto;
-        /* Center them with auto margin */
-        padding: 10px 20px;
-        font-size: 1rem;
-        /* Adjust the font size */
-    }
 }
 
 /*quiz*/
@@ -888,42 +771,29 @@ embed {
 .tem-container {
     display: flex;
     align-items: center;
-    /* Aligner verticalement au centre */
     justify-content: space-between;
-    /* Écart entre le texte et la vidéo */
     margin-left: 40px;
     margin-right: 40px;
     gap: 20px;
-    /* Espacement entre les deux éléments */
 }
 
-/* Texte à gauche */
 .tem-text {
     flex: 1;
-    /* Prend tout l'espace disponible à gauche */
     max-width: 60%;
-    /* Limiter la largeur du texte */
     text-align: justify;
-    /* Justification du texte */
     margin-top: 60px;
 }
 
-/* Vidéo à droite */
 .tem-video {
     flex: 1;
-    /* Prend l'espace restant à droite */
     max-width: 40%;
-    /* Limiter la taille de la vidéo */
     margin-top: 50px;
 }
 
 .tem-video video {
     width: 100%;
-    /* Vidéo responsive */
     height: auto;
-    /* Maintenir le ratio d'aspect */
     border-radius: 8px;
-    /* Coins arrondis pour le style */
 }
 
 .tem-IIT2 {
@@ -931,7 +801,6 @@ embed {
     margin-left: 40px;
     margin-right: 40px;
     gap: 20px;
-    /* Espacement entre les deux éléments */
     color: white;
 }
 
@@ -944,11 +813,9 @@ embed {
 }
 
 
-
 /*IIT*/
 
 
-/* Media query for small screens */
 @media (max-width: 768px) {
 
     /*navbar*/
@@ -992,11 +859,8 @@ embed {
 
     .home-img .img-box {
         width: 50vw;
-        /* Adjust size for smaller screens */
         height: 50vw;
-        /* Adjust size for smaller screens */
-        transform: translateY(0);
-        /* Adjust positioning */
+        transform: translateY(0); 
     }
 
     .home-info .btn-sci {
@@ -1047,84 +911,58 @@ embed {
 
     form {
         max-width: 90%;
-        /* Augmente la largeur maximale pour les petits écrans */
         width: 100%;
-        /* Prend toute la largeur disponible */
         margin-left: 20px;
-        /* Supprime la marge gauche */
         padding: 15px;
-        /* Ajuste le padding pour les petits écrans */
     }
 
     label {
         font-size: 1rem;
-        /* Diminue légèrement la taille de la police */
         margin: 8px 0;
-        /* Ajuste la marge pour les petits écrans */
     }
 
     input,
     textarea {
         width: 80%;
-        /* Utilise toute la largeur disponible */
         margin: 8px 0;
-        /* Ajuste la marge pour les petits écrans */
         padding: 8px;
-        /* Ajuste le padding */
         font-size: 0.9rem;
-        /* Diminue légèrement la taille de la police */
     }
 
     textarea {
         height: 80px;
-        /* Diminue la hauteur pour les petits écrans */
     }
 
     button {
         width: 100%;
-        /* Utilise toute la largeur disponible */
         padding: 10px;
-        /* Ajuste le padding */
     }
 
     .contact-info {
         margin-top: 60px;
-        /* Réduit la marge supérieure pour les petits écrans */
         margin-left: 0;
-        /* Supprime la marge gauche */
         padding: 15px;
-        /* Ajoute un padding pour de l'espace autour du contenu */
     }
 
     .contact-liste {
         padding: 15px 0;
-        /* Réduit le padding pour les petits écrans */
         flex-direction: column;
-        /* Aligne les éléments verticalement */
         text-align: center;
-        /* Centre le texte */
     }
 
     .contact-img {
         margin-right: 0;
-        /* Supprime l'espace entre l'image et le texte */
         margin-bottom: 10px;
-        /* Ajoute une marge en bas de l'image */
     }
 
     h6 {
         font-size: 1.2rem;
-        /* Ajuste la taille de la police pour les petits écrans */
-
         justify-content: center;
-        /* Centre les éléments horizontalement */
     }
 
     p {
         padding-left: 0;
-        /* Supprime l'indentation */
         font-size: 0.9rem;
-        /* Diminue légèrement la taille de la police */
     }
 
     /*contact*/
@@ -1139,16 +977,13 @@ embed {
 
     .card-content {
         grid-template-columns: 1fr;
-        /* Une seule colonne */
         gap: 15px;
         padding: 10px;
     }
 
     .card {
         max-width: 50%;
-        /* Prend tout l'espace disponible */
         margin-bottom: 20px;
-        /* Ajoute un espace entre les cartes */
     }
 
     .card-title {
@@ -1177,13 +1012,9 @@ embed {
 
     button {
         width: 30px;
-        /* Slightly smaller width for better fit */
         height: 30px;
-        /* Slightly smaller height */
         margin: 20px 0 5px;
-        /* Adjusted margins for better spacing */
         border-width: 1.5px;
-        /* Slightly thinner border */
     }
 
     button:hover {
@@ -1191,11 +1022,27 @@ embed {
         background-color: #3df06a;
     }
 
+    embed {
+        height: 300px;
+    }
+
     /*diplomes*/
 
     /*TP*/
     .TP {
         margin: 60px 100px;
+    }
+
+    .TP h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .tps {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        font-size: 1rem;
     }
 
     /*TP*/
