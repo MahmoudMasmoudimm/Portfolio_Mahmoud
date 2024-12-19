@@ -58,7 +58,6 @@ const answersSelected = new Array(quizData.length).fill(null);
 function loadQuestion() {
     const questionElement = document.getElementById("question");
     const answersElement = document.getElementById("answers");
-    const submitButton = document.getElementById("submit");
 
     questionElement.textContent = quizData[currentQuestion].question;
     answersElement.innerHTML = "";
@@ -71,7 +70,6 @@ function loadQuestion() {
         button.onclick = () => {
             answersSelected[currentQuestion] = index;
 
-            // Disable all buttons manually
             for (let i = 0; i < answersElement.children.length; i++) {
                 answersElement.children[i].disabled = true;
             }
@@ -125,7 +123,7 @@ function showResult() {
 
         return `
             <p>${index + 1}. ${q.question}<br>
-            <strong>Your answer:</strong> ${userAnswer} ${isCorrect ? "✅" : "❌"}<br>
+            <strong>Your answer:</strong> ${userAnswer}<br>
             <strong>Correct answer:</strong> ${correctAnswer}</p>
         `;
     }).join("\n");
