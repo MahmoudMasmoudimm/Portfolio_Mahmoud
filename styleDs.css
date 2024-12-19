@@ -69,12 +69,6 @@ a {
     font-size: 28px;
 }
 
-/*.home-info h2 span {
-    display: inline-block;
-    color: transparent;
-    -webkit-text-stroke: .7px #3df06a;
-}
-*/
 .home-info p {
     font-size: 16px;
     margin: 10px 0 25px;
@@ -124,11 +118,8 @@ a {
 
 .home-img .img-box::before,
 .home-img .img-box::after {
-    /*content: '';
-    position: absolute;*/
     width: 500px;
     height: 500px;
-    /*background: conic-gradient(transparent, transparent, #3df06a, transparent);*/
 }
 
 .home-img .img-box .img-item {
@@ -461,7 +452,6 @@ p {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Card Content Section */
 .card-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -860,7 +850,6 @@ embed {
     .home-img .img-box {
         width: 50vw;
         height: 50vw;
-        transform: translateY(0); 
     }
 
     .home-info .btn-sci {

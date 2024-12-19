@@ -70,19 +70,6 @@ function loadQuestion() {
         button.onclick = () => {
             answersSelected[currentQuestion] = index;
 
-            for (let i = 0; i < answersElement.children.length; i++) {
-                answersElement.children[i].disabled = true;
-            }
-
-            if (index === quizData[currentQuestion].correct) {
-                button.style.backgroundColor = "green";
-                score++;
-            } else {
-                button.style.backgroundColor = "red";
-                const correctButton = answersElement.querySelector(`[data-index='${quizData[currentQuestion].correct}']`);
-                if (correctButton) correctButton.style.backgroundColor = "green";
-            }
-
             setTimeout(() => {
                 currentQuestion++;
                 if (currentQuestion < quizData.length) {
